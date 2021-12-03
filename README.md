@@ -43,11 +43,31 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
 
 ### API Documentation
 - ** Authorization (obtaining access and refresh tokens) **
-   - Path: [http://127.0.0.1:8000/api/au] (http://127.0.0.1:8000/api/au)
+   - Path: [http://localhost:8000/api/auth] (http://localhost/api/auth)
    - Method: POST
    - Parameters:
       - client_id: text 
       - client_secret: text
-      - grant_type: text
+      - grant_type: authorization_code
       - code: text
-      - redirect_uri
+      - redirect_uri: url_path
+      
+- ** Update refresh and access tokens **
+   - Path: [http: // localhost: 8000 / api / token / refresh /] (http: // localhost: 8000 / api / token / refresh /)
+   - Method: POST
+   - Parameters:
+      - client_id: text 
+      - client_secret: text
+      - grant_type: refresh_token
+      - refresh_token: text
+      - redirect_uri : url_path
+ 
+ - ** Request to amocrm **
+   - Path: [http: // localhost: 8000 / amocrm_request /] (http: // localhost: 8000 / amocrm_request /)
+   - Method: GET
+   - Header: 
+      - Access token
+   - Parameters:
+      - name: text 
+      - phone: text
+      - email: text

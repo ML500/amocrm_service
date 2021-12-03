@@ -38,3 +38,16 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
   - https://ngrok.com/
 7. Start ngrok server in terminal
   - ngrok http http://127.0.0.1:8000/
+8. Register and create an integration to get access keys
+  - https://www.amocrm.com/
+
+### API Documentation
+- ** Authorization (obtaining access and refresh tokens) **
+   - Path: [http://127.0.0.1:8000/api/au] (http://127.0.0.1:8000/api/au)
+   - Method: POST
+   - Parameters:
+      - client_id: text 
+      - client_secret: text
+      - grant_type: text
+      - code: text
+      - redirect_uri

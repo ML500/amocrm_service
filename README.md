@@ -43,7 +43,7 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
 
 ### API Documentation
 - ** Authorization (obtaining access and refresh tokens) **
-   - Path: [http://localhost:8000/api/auth] (http://localhost/api/auth)
+   - Path: http://localhost/api/auth
    - Method: POST
    - Parameters:
       - client_id: text 
@@ -53,7 +53,7 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
       - redirect_uri: url_path
       
 - ** Update refresh and access tokens **
-   - Path: [http: // localhost: 8000 / api / token / refresh /] (http: // localhost: 8000 / api / token / refresh /)
+   - Path: http://localhost/api/auth
    - Method: POST
    - Parameters:
       - client_id: text 
@@ -63,7 +63,7 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
       - redirect_uri : url_path
  
  - ** Request to amocrm **
-   - Path: [http: // localhost: 8000 / amocrm_request /] (http: // localhost: 8000 / amocrm_request /)
+   - Path: http://localhost/api/request_to_amocrm
    - Method: GET
    - Header: 
       - Access token

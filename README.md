@@ -36,5 +36,5 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
   - pip install -r requirements.txt
 6. Need to install ngrok for delivery to remote server
   - https://ngrok.com/
-7. Start ngrok server in terminal command
+7. Start ngrok server in terminal
   - ngrok http http://127.0.0.1:8000/

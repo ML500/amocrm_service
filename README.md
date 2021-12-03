@@ -42,7 +42,7 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
   - https://www.amocrm.com/
 
 ### API Documentation
-- ** Authorization (obtaining access and refresh tokens) **
+- **Authorization (obtaining access and refresh tokens)**
    - Path: http://localhost/api/auth
    - Method: POST
    - Parameters:
@@ -51,8 +51,8 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
       - grant_type: authorization_code
       - code: text
       - redirect_uri: url_path
-      
-- ** Update refresh and access tokens **
+
+- **Update refresh and access tokens**
    - Path: http://localhost/api/auth
    - Method: POST
    - Parameters:
@@ -61,8 +61,8 @@ Using this data, you need to find a contact in AmoCRM with this mail and (or) ph
       - grant_type: refresh_token
       - refresh_token: text
       - redirect_uri : url_path
- 
- - ** Request to amocrm **
+
+ - **Request to amocrm**
    - Path: http://localhost/api/request_to_amocrm
    - Method: GET
    - Header: 
